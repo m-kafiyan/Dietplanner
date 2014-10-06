@@ -1,4 +1,0 @@
-Dietplanner
-===========
-
-Android Diet Planner
