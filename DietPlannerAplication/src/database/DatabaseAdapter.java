@@ -176,7 +176,7 @@ public class DatabaseAdapter{
 				values.put(TABLE_USER_SUGER, UserMealUnit.getSuger());
 
 				myDataBase = openHelper.getWritableDatabase();
-				id = myDataBase.insert(TABLE_USER, null, values);
+				id = myDataBase.insert(TABLE_USERMEALUNIT, null, values);
 
 			} catch (Exception e) {
 				Log.e(TAG, "Exception: " + e.getMessage());
@@ -188,6 +188,36 @@ public class DatabaseAdapter{
 		}
 		
 		
+//update UserMealUnit============================================================
+		
+		public int updateUserMealUnit(UserMealUnit UserMealUnit) {
+			SQLiteDatabase myDataBase = null;
+			int count = -1;
+			try {
+				myDataBase = openHelper.getWritableDatabase();
+				ContentValues values = new ContentValues();
+				values.put(TABLE_USERMEALUNIT_BREAKFAST,UserMealUnit.isBreakfast() );
+				values.put(TABLE_USERMEALUNIT_LUNCH, UserMealUnit.isLunch());
+				values.put(TABLE_USERMEALUNIT_SNACK, UserMealUnit.isSnack());
+				values.put(TABLE_USERMEALUNIT_APPETIZERS,UserMealUnit.isAppetizers());
+				values.put(TABLE_USERMEALUNIT_DINNER, UserMealUnit.isDinner());
+				values.put(TABLE_USERMEALUNIT_DAIRY,UserMealUnit.getDairy());
+				values.put(TABLE_USERMEALUNIT_VEGETABLES, UserMealUnit.getVegetables());
+				values.put(TABLE_USERMEALUNIT_FRUIT , UserMealUnit.getFruit());
+				values.put(TABLE_USERMEALUNIT_MEAT_BEAN_EGG, UserMealUnit.getMeat_bean_egg());
+				values.put(TABLE_USERMEALUNIT_BREAD_CEREALS,UserMealUnit.getBread_cereals());
+				values.put(TABLE_USERMEALUNIT_FAT,UserMealUnit.getFat());
+				values.put(TABLE_USERMEALUNIT_SUGER, UserMealUnit.getSuger());
+
+				count = myDataBase.update(TABLE_USERMEALUNIT, values, TABLE_USERMEALUNIT_ID + "=?",
+						new String[] { String.valueOf(UserMealUnit.getMealid()) });
+			} catch (Exception e) {
+				Log.e(TAG, "Exception: " + e.getMessage());
+			} finally {
+				myDataBase.close();
+			}
+			return count;
+		}
 		
 		
 //	insert into user table ======================================================
@@ -261,8 +291,40 @@ public class DatabaseAdapter{
 			return count;
 		}
 		
+//insert in to EatenFood table=========================================================
+		
+		public Long insertEatenFood(EatenFood eatenfood) {
+			SQLiteDatabase myDataBase = null;
+			Long id = -1L;
+			try {
+				ContentValues values = new ContentValues();
+				values.put(TABLE_EATENFOOD_BREAKFAST, eatenfood.isBreakfast());
+				values.put(TABLE_EATENFOOD_LUNCH, eatenfood.isLunch());
+				values.put(TABLE_EATENFOOD_SNACK, eatenfood.isSnack());
+				values.put(TABLE_EATENFOOD_APPETIZERS, eatenfood.isAppetizers());
+				values.put(TABLE_EATENFOOD_DINNER, eatenfood.isDinner());
+				values.put(TABLE_EATENFOOD_DATA, eatenfood.getDay());
+				values.put(TABLE_EATENFOOD_EQUIVALENT, eatenfood.getEquivalent());
+				values.put(TABLE_EATENFOOD_DAIRY , eatenfood.isDairy());
+				values.put(TABLE_EATENFOOD_VEGETABLES, eatenfood.isVegetables());
+				values.put(TABLE_EATENFOOD_FRUIT, eatenfood.isFruit());
+				values.put(TABLE_EATENFOOD_MEAT_BEAN_EGG, eatenfood.isMeat_bean_egg());
+				values.put(TABLE_EATENFOOD_BREAD_CEREALS, eatenfood.isBread_cereals());
+				values.put(TABLE_EATENFOOD_FAT,eatenfood.isFat());
+				values.put(TABLE_EATENFOOD_SUGER, eatenfood.isSuger());
+				values.put(TABLE_EATENFOOD_UNITSUM, eatenfood.getUnitsum());
 
+				myDataBase = openHelper.getWritableDatabase();
+				id = myDataBase.insert(TABLE_EATENFOOD, null, values);
 
+			} catch (Exception e) {
+				Log.e(TAG, "Exception: " + e.getMessage());
+			} finally {
+				if (myDataBase != null && myDataBase.isOpen())
+					myDataBase.close();
+			}
+			return id;
+		}
 		
 		
 		
