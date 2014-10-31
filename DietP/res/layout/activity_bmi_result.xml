@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFA"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/showBMIvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:background="#FFA500"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/showBMIvalue"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showBmivalueresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showBMIvalue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#fff"
+            android:gravity="right"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:textColor="#FFA500"
+            android:textDirection="anyRtl"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/showIdealweight"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_below="@+id/showBmivalueresult"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#FFA500"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/showIdealweight"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showIdealweightresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showIdealweight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#fff"
+            android:gravity="right"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:textColor="#FFA500"
+            android:textDirection="anyRtl"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/showDailycalory"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_below="@+id/showIdealweightresult"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#FFA500"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/showDailycalory"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showDailycaloryresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showDailycalory"
+            android:layout_centerHorizontal="true"
+            android:background="#fff"
+            android:gravity="right"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:textColor="#FFA500"
+            android:textDirection="anyRtl"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/showBmiinterpretation"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_below="@+id/showDailycaloryresult"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#FFA500"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/showBmiinterpretation"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showBmiinterpretationresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showBmiinterpretation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#fff"
+            android:gravity="right"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:textColor="#FFA500"
+            android:textDirection="anyRtl"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</ScrollView>

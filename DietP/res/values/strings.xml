@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DietP</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help">راهنما</string>
+    <string name="action_back">بازگشت</string>
+    <string name="title_activity_feature_list">FeatureList</string>
+    <string name="bmicalculator">محاسبه ی BMI</string>
+    <string name="dietplanner">محاسبه ی رژیم</string>
+    <string name="help">راهنما</string>
+    <string name="extrainformation">بیشتر بدانید</string>
+        <string name="height">قد شما بر حسب متر</string>
+    <string name="weight">وزن شما بر حسب کیلوگرم</string>
+    <string name="age">سن شما</string>
+    <string name="gender">جنسیت</string>
+    <string name="male">مرد</string>
+    <string name="femaile">زن</string>
+    <string name="save">محاسبه</string>
+    <string name="result">نتیجه ی محاسبات  شما : </string>
+    <string name="showBMIvalue">شاخص توده بدنی شما برابر با :</string>
+	<string name="level_of_activity">میزان فعالیت</string>
+    <string name="showBmiinterpretation">وزن شما در محدوده ی :</string>
+	<string name="showIdealweight">میانگین وزن آیده آل شما برابر با :</string>
+    <string name="showDailycalory">میزان کالری مصرفی روزانه شما :</string>
+	  
+    <string-array name="activityitems">
+        <item>پرتحرک</item>
+        <item>فعال</item>
+        <item>کم فعالیت</item>
+        <item>بدون فعالیت</item>
+    </string-array>
+    <string name="title_activity_bmi_result">BmiResult</string>
+    <string name="test">این برای تست است</string>
+
+</resources>

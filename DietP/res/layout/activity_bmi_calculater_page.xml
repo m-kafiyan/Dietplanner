@@ -1,0 +1,149 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFA" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/heighttext"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box2_list_bg"
+                android:ems="10"
+                android:hint="@string/height"
+                android:paddingLeft="20dip"
+                android:paddingRight="15dip"
+                android:layout_centerHorizontal="true"
+        		android:layout_marginTop="20dip"
+                android:textColor="#444"
+                android:textSize="17sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/weighttext"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heighttext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/box2_list_bg"
+                android:ems="10"
+                android:hint="@string/weight"
+                android:paddingLeft="20dip"
+                android:paddingRight="15dip"
+                android:textColor="#444"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/agetext"
+                android:layout_width="250dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weighttext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/box2_list_bg"
+                android:ems="10"
+                android:hint="@string/age"
+                android:paddingLeft="20dip"
+                android:paddingRight="15dip"
+                android:textColor="#444"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="280dp"
+                android:layout_height="1dip"
+                android:layout_below="@+id/agetext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="#eee" />
+
+            <RadioGroup
+                android:id="@+id/selectgender"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/femaleselected"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/femaile" />
+
+                <RadioButton
+                    android:id="@+id/maleselected"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="@string/male" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="280dp"
+                android:layout_height="1dip"
+                android:layout_below="@+id/selectgender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="#eee" />
+
+            <Spinner
+                android:id="@+id/chooseactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activitylife"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dip"
+                android:entries="@array/activityitems"
+                android:gravity="center"
+                android:prompt="@string/level_of_activity" />
+
+            <TextView
+                android:id="@+id/activitylife"
+                android:layout_width="100dip"
+                android:layout_height="30dip"
+                android:layout_below="@+id/view2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dip"
+                android:text="@string/level_of_activity"
+                android:textColor="#444"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/saveinformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/agetext"
+                android:layout_alignRight="@+id/agetext"
+                android:layout_below="@+id/chooseactivity"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:background="#FFA500"
+                android:text="@string/save"
+                android:textColor="#fff"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
