@@ -28,12 +28,24 @@
         </activity>
         <activity
             android:name="com.example.dietp.BmiCalculaterPage"
-            android:theme="@style/Theme.Example">
+            android:theme="@style/Theme.Example" >
         </activity>
         <activity
             android:name="com.example.dietp.BmiResult"
             android:label="@string/title_activity_bmi_result"
             android:theme="@style/Theme.Example" >
+        </activity>
+        <activity
+            android:name="com.example.dietp.DialogBox"
+            android:label="@string/title_activity_dialog_box" >
+        </activity>
+        <activity
+            android:name="com.example.dietp.DietP"
+            android:label="@string/title_activity_diet_p" >
+        </activity>
+        <activity
+            android:name="com.example.dietp.DietResult"
+            android:label="@string/title_activity_diet_result" >
         </activity>
     </application>
 

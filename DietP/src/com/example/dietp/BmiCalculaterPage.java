@@ -94,11 +94,14 @@ public class BmiCalculaterPage extends ActionBarActivity  {
 				com.example.dietp.database.DatabaseAdapter dbAdapter = new com.example.dietp.database.DatabaseAdapter(BmiCalculaterPage.this);
 				dbAdapter.insertUser(user);
 				
+				 
 				Intent intent= new Intent(getApplicationContext(),BmiResult.class);
 				intent.putExtra("Bmivalue", Bmivalue);
 				intent.putExtra("bmiInterpretation", bmiInterpretation);
 				intent.putExtra("idealweight", idealweight);
 				intent.putExtra("dailycalories", dailycalories);
+				
+				
 				startActivity(intent);
 				
 				

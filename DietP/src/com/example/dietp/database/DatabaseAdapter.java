@@ -376,7 +376,7 @@ public class DatabaseAdapter {
 	
 	//getting single User=================================================
 
-	User getsingleuser(int userid){
+	public User getsingleuser(int userid){
 		 SQLiteDatabase myDataBase = null;
 		 myDataBase = openHelper.getWritableDatabase();
 
@@ -546,7 +546,7 @@ public class DatabaseAdapter {
 		return count;
 	}
 	
-	//getting single User=================================================
+	//getting single eatenfood=================================================
 
 	EatenFood getsingleeatenfood(int eatenfoodid){
 		 SQLiteDatabase myDataBase = null;
@@ -787,7 +787,7 @@ public class DatabaseAdapter {
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<UnitInformation>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	
 
-	UnitInformation getsingleunitinformation(int mealid){
+	public UnitInformation getsingleunitinformation(int mealid){
 		 SQLiteDatabase myDataBase = null;
 		 myDataBase = openHelper.getWritableDatabase();
 

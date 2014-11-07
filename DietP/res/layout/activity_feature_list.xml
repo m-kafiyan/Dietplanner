@@ -48,7 +48,8 @@
             android:background="#FFA500"
             android:text="@string/dietplanner"
             android:textColor="#fff"
-             android:textSize="20sp" />
+             android:textSize="20sp"
+             android:id="@+id/showdietcal" />
     </LinearLayout>
 
     <LinearLayout

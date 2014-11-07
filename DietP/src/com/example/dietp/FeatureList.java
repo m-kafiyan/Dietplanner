@@ -18,11 +18,23 @@ public class FeatureList extends ActionBarActivity {
 	
 
 	Button bmiinformation;
+	Button dietinformation;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_feature_list);
 		bmiinformation = (Button) findViewById(R.id.Bmicalculater);
+		dietinformation=(Button) findViewById(R.id.showdietcal);
+		dietinformation.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View m) {
+				Intent intent =new Intent(FeatureList.this,DietResult.class);
+				startActivity(intent);
+				finish();
+				
+			}
+		});
 		bmiinformation.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
